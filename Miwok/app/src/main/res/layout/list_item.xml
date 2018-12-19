@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:background="#FD8E09"
+    >
+
+    <ImageView
+        android:layout_width="88dp"
+        android:layout_height="88dp"
+        android:src = "@mipmap/ic_launcher"
+        android:id = "@+id/image_view"
+        android:background="#FFF7DA"
+    />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="88dp"
+        android:paddingLeft="16dp"
+        android:layout_weight = "0.9"
+        android:id = "@+id/text_container"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/miwok_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:textColor="#FFFFFF"
+            android:gravity="bottom"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            tools:text="lutti" />
+
+        <TextView
+            android:id="@+id/default_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:gravity="top"
+            android:layout_weight="1"
+            tools:text="one" />
+    </LinearLayout>
+
+
+</LinearLayout>
